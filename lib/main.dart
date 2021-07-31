@@ -19,11 +19,18 @@ class MyApp extends StatelessWidget {
               ),
             )),
         backgroundColor: Colors.blue,
-        body: Center(
-          child: Text(
-            'My Name is Saurav ',
-            style: TextStyle(
-              fontSize: 40,
+        body: SafeArea(
+          child: Container(
+            color: Colors.red,
+            height: 100,
+            width: 500,
+            margin: EdgeInsets.only(left: 20),
+            padding: EdgeInsets.all(10),
+            child: Text(
+              'My Name is Saurav ',
+              style: TextStyle(
+                fontSize: 40,
+              ),
             ),
           ),
         ),
