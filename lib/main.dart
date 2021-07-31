@@ -20,24 +20,46 @@ class MyApp extends StatelessWidget {
             )),
         backgroundColor: Colors.blue,
         body: SafeArea(
-          child: Container(
-            color: Colors.red,
-            height: 100,
-            width: 500,
-            margin: EdgeInsets.only(left: 20),
-            padding: EdgeInsets.all(10),
-            child: Text(
-              'My Name is Saurav ',
-              style: TextStyle(
-                fontSize: 40,
+            child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+              Container(
+                color: Colors.red,
+                width: 50,
+                child: Text(
+                  'Container1',
+                  style: TextStyle(
+                    fontSize: 40,
+                  ),
+                ),
               ),
-            ),
-          ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black,
-          child: Icon(Icons.add),
-        ),
+              SizedBox(
+                width: 30,
+              ),
+              Container(
+                color: Colors.green,
+                width: 50,
+                child: Text(
+                  'Container2',
+                  style: TextStyle(
+                    fontSize: 40,
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 30,
+              ),
+              Container(
+                color: Colors.white,
+                width: 50,
+                child: Text(
+                  'Container1',
+                  style: TextStyle(
+                    fontSize: 40,
+                  ),
+                ),
+              ),
+            ])),
       ),
     );
   }
