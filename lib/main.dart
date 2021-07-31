@@ -21,37 +21,12 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blue,
         body: SafeArea(
             child: Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
               Container(
                 color: Colors.red,
-                width: 50,
-                child: Text(
-                  'Container1',
-                  style: TextStyle(
-                    fontSize: 40,
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 30,
-              ),
-              Container(
-                color: Colors.green,
-                width: 50,
-                child: Text(
-                  'Container2',
-                  style: TextStyle(
-                    fontSize: 40,
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 30,
-              ),
-              Container(
-                color: Colors.white,
-                width: 50,
+                width: 400,
+                height: 400,
                 child: Text(
                   'Container1',
                   style: TextStyle(
