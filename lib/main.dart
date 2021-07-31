@@ -12,10 +12,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
             backgroundColor: Colors.black,
+            centerTitle: true, // Make the title in the Center
             title: Text(
-              'Demo',
+              'Mi Card App',
               style: TextStyle(
-                fontSize: 55,
+                fontSize: 40,
               ),
             )),
         backgroundColor: Colors.blue,
@@ -24,16 +25,15 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
               Container(
-                color: Colors.red,
-                width: 400,
-                height: 400,
-                child: Text(
-                  'Container1',
-                  style: TextStyle(
-                    fontSize: 40,
-                  ),
-                ),
-              ),
+                  color: Colors.red,
+                  width: 400,
+                  height: 400,
+                  child: Text(
+                    'Container1',
+                    style: TextStyle(
+                      fontSize: 24,
+                    ),
+                  )),
             ])),
       ),
     );
