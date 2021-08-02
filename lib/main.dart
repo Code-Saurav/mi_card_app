@@ -12,29 +12,30 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
             backgroundColor: Colors.black,
-            centerTitle: true, // Make the title in the Center
             title: Text(
-              'Mi Card App',
+              'Demo',
               style: TextStyle(
-                fontSize: 40,
+                fontSize: 55,
               ),
             )),
         backgroundColor: Colors.blue,
         body: SafeArea(
-            child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-              Container(
-                  color: Colors.red,
-                  width: 400,
-                  height: 400,
-                  child: Text(
-                    'Container1',
-                    style: TextStyle(
-                      fontSize: 24,
-                    ),
-                  )),
-            ])),
+          child: Column(
+            children: <Widget>[
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/sauravkr.jpg'),
+              ),
+              Text(
+                'Saurav Kumar Sah',
+                style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
