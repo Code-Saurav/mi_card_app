@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
             children: <Widget>[
@@ -36,46 +36,38 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'SourceSansPro',
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.perm_phone_msg,
-                      size: 20,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.perm_phone_msg,
+                    size: 20,
+                    color: Colors.teal.shade900,
+                  ),
+                  title: Text(
+                    '+1 972 533 5860',
+                    style: TextStyle(
                       color: Colors.teal.shade900,
                     ),
-                    SizedBox(width: 10),
-                    Text(
-                      '+1 972 533 5860',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      size: 20,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 20,
+                    color: Colors.teal.shade900,
+                  ),
+                  title: Text(
+                    'sauravkrsah7@gmail.com',
+                    style: TextStyle(
                       color: Colors.teal.shade900,
                     ),
-                    SizedBox(width: 10),
-                    Text(
-                      'sauravkrsah7@gmail.com',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
